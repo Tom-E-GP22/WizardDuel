@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ButtonHandler : MonoBehaviour
 {
@@ -12,20 +13,23 @@ public class ButtonHandler : MonoBehaviour
         //This method is currently on Host, Join and SinglePlayer buttons
     }
 
-    public void SelectedCharacter()
-    {
-        //TODO
-        //Add way for game to recognize what character was selected
-        //perhaps ENUM?
-    }
-
     public void ToggleUIElement(GameObject gameObject)
     {
-        gameObject.SetActive(gameObject.activeInHierarchy);
+        gameObject.SetActive(!gameObject.activeInHierarchy);
     }
 
     public void ChangeScene(int sceneIndex)
     {
         SceneManager.LoadScene(sceneIndex);
+    }
+
+    public void DisableButton(Button button)
+    {
+        button.interactable = false;
+    }
+
+    public void DebugButton()
+    {
+        Debug.Log("Button Pressed");
     }
 }
