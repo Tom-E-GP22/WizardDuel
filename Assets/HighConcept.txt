@@ -1,0 +1,13 @@
+Wizard Duel
+5 way rock paper scissors but wizards and spells
+2D Sideview Action PvP
+Each player selects 5 spells, 
+same spell can be reused multiple times in one battle.
+Once both players have selected their spells the battle begins.
+During battle both players have 3 health and the person with 
+the most health at the end of battle wins the round. Best of 3.
+
+Players choose from 4 different wizards.
+To hinder people from chosing the same wizard, player 1
+will have to choose their wizard before getting the key to invite
+their oponent. After which the portrait is locked.
