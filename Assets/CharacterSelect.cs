@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class CharacterSelect : MonoBehaviour
 {
+    public enum Character { Ghost, Robe, Sam, Trigger}
+    static Character selectedCharacter;
+    public Character thisCharacter;
 
     public void SelectCharacter(bool selected)
     {
-        Debug.Log("pressed " +gameObject.name);
         var outline = GetComponents<Outline>()[1];
         if (selected)
         {
@@ -16,6 +18,9 @@ public class CharacterSelect : MonoBehaviour
         }
         else
             outline.effectColor = Color.white;
+
+        selectedCharacter = thisCharacter;
+        Debug.Log("pressed " + selectedCharacter);
 
         //TODO
         //Add way for game to recognize what character was selected
