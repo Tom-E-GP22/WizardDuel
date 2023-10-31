@@ -1,0 +1,15 @@
+progression ideas;
+rank/lvl
+skins (x amount of wins as a character)
+new areas (backgrounds)
+
+TODO;
+how to play update✅
+gameplay
+netcoding
+progression
+spellcasting
+WebGL version
+sound/music
+
+Add objectpool for elementselect
